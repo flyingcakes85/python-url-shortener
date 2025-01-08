@@ -80,7 +80,6 @@ def init_db():
     with open("schema.sql") as f:
         conn.executescript(f.read())
     conn.commit()
-    conn.commit()
 
 
 if __name__ == "__main__":
